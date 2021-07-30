@@ -15,15 +15,16 @@ html, body{
 }
 
 img {
+    max-width: 100%;
 }
 
 .background {
     position: absolute;
     left: 0;
+    display: flex;
 }
 
 .background img {
-    display: flex;
 }
 
 a {text-decoration: none; color: #f3ebe1; text-shadow: 2px 2px 3px #dbc8be;}
