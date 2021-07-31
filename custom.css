@@ -29,30 +29,19 @@ img {
 
 a {text-decoration: none; color: #f3ebe1; text-shadow: 2px 2px 3px #dbc8be;}
 a:hover {color: #948f83;}
-h1{font-weight: normal; font-size: 150%;}
-h2{font-weight: normal; font-size: 115%; }
+h1{font-weight: normal; font-size: 150%; color: #f3ebe1;}
+h2{font-weight: normal; font-size: 115%;color: #f3ebe1;}
+h3{font-weight: normal; color: #f3ebe1;}
 .current a:hover {color: #f3ebe1;}
+
 .greeting {
-    text-decoration: none;
-    color: #f3ebe1;
-    text-shadow: 2px 2px 3px #dbc8be;
-    font-size: 400%;
-    display: flex;
-    justify-content: flex-start;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     transform: translateY(-100%);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
+    line-spacing: 2;
 }
 
-.greeting h2 {
-    text-align: center;
-    margin: 0;
-    padding: 0 0 50px 0;
-    transform: translate(40px, 50px);
-}
 
 
 ul {padding: 0; list-style-type: none;}
@@ -102,24 +91,27 @@ li {list-style: none; margin-bottom: 30px; text-align: center;}
 }
 
 .bio{
-    max-width: 1300px;
-    margin: 40px auto 0 auto;
+    display: flex;
+    width: 90%;
+    margin: 60px auto 0 auto;
     line-height: 2.5;
-    transform: translateY(-200px)
+    transform: translateY(-200px);
+    justify-content: flex-start;
 }
 
 .biopic {
-    background-color: pink;
-    flex-basis: 23%;
-}
-.biowords{
-    background-color: lavender;
-    flex-basis: 75%;
+    width: 800px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: -400px;
 }
 
 .art-gallery {
     transform: translateY(-150px);
 }
+
+
 .row1 , .row2 , .row3 , .row4 , .row5 {
     max-width: 1400px;
     margin: 20px 0 20px 0;
@@ -127,7 +119,7 @@ li {list-style: none; margin-bottom: 30px; text-align: center;}
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #a0c4d9;
+    background-color: #ebe6d8;
     border-radius: 10px;
     flex-wrap: wrap;
 }
@@ -145,7 +137,7 @@ li {list-style: none; margin-bottom: 30px; text-align: center;}
     transform: scale(2);
 }
 
-.footer { margin: 0; padding: 0;}
+.footer {margin: 0; padding: 0;}
 
 .icons {
     padding: 0;
@@ -156,7 +148,7 @@ li {list-style: none; margin-bottom: 30px; text-align: center;}
 }
  
 .icons li {
-    flex-basis: 5%;
+    flex-basis: 10%;
     transform: translateX(55%);
 
 }
@@ -188,9 +180,9 @@ li {list-style: none; margin-bottom: 30px; text-align: center;}
 
 
 @media (min-width: 700px) {
-    .bio {
-        display: flex;
-        justify-content: space-between;
+    .biowords {
+        flex-basis: 60%;
+
     }
 }
 
