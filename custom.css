@@ -109,7 +109,7 @@ li {list-style: none; margin-bottom: 30px; text-align: center;}
     
 }
 
-.bio{
+.bio, .contact{
     display: flex;
     width: 90%;
     margin: 60px auto 0 auto;
@@ -120,7 +120,7 @@ li {list-style: none; margin-bottom: 30px; text-align: center;}
 
 .biowords {
     padding: 20px;
-    background-color: rgba(115,183, 243, 0.8);
+    background-color: rgba(115,183, 243, 0.5);
     border-radius: 10px;
 }
 
